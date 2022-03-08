@@ -1,0 +1,5 @@
+- hosts: all
+  connection: local
+  tasks:
+    - name: Creates directory
+      file: name=sample path=./ state=directory

@@ -1,0 +1,6 @@
+- hosts: localhost
+  tasks:
+    - name: line insert
+      lineinfile:
+        path: ./test
+        line: 'Hii This is my sample script'
