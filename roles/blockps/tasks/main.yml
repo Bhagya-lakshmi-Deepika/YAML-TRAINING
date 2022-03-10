@@ -1,0 +1,5 @@
+---
+# tasks file for blockps
+- shell: "killall screen --wait"
+  ignore_errors: true
+

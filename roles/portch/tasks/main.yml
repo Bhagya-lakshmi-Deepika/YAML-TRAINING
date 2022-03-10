@@ -1,0 +1,12 @@
+---
+# tasks file for portch
+- name: Reload Firewalld service
+  service:
+    name: firewalld
+    state: restarted
+- name: check open port
+  shell: firewall-cmd --list-all
+  register: result
+- debug:
+    msg="{{result.stdout}}"
+
